@@ -1,6 +1,9 @@
 ﻿global using System;
 global using System.IO;
 global using System.Collections.Generic;
+global using System.Runtime;
+global using System.Reflection.Emit;
+
 
 // https://stackoverflow.com/questions/2742951/get-child-classes-from-base-class
 //https://towardsdatascience.com/building-a-neural-network-framework-in-c-16ef56ce1fef 
