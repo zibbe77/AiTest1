@@ -16,9 +16,13 @@ public class Actor
         //bestämer hur mycket dom vill ha 
         DesiredResource = generator.Next(1, 5);
 
-        //traits slumpas in 
 
         //laddar in alla traits 
+        var subclassTypes = Assembly
+   .GetAssembly(typeof(Traits))
+   .GetTypes()
+   .Where(t => t.IsSubclassOf(typeof(Traits)));
+
         //slumpar vilka som har mest vikt 
         //gör en lista på vilken som är mest (diksonary)
         // this.GetType().Name 
